@@ -38,7 +38,10 @@
       "WebSearch",
       "WebFetch(domain:www.npmjs.com)",
       "WebFetch(domain:github.com)",
-      "Skill(update-config)"
+      "Skill(update-config)",
+      "Bash(awk '{print \"peerly-frontend/\" $0}')",
+      "Bash(awk 'BEGIN {FS=\"/\"} {indent=\"\"; for\\(i=3; i<NF; i++\\) indent=indent\"  \"; print indent $NF \" — \" $0}')",
+      "Bash(awk '{print \"peerly-backend/\" $0}')"
     ]
   },
   "enabledPlugins": {
